@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+.h1,.h2,.h3,.h4,.h5,
+h1,h2,h3,h4,h5{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 200;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+h3,.h3 {font-size: 1.5em;}
+@media (min-width: 1200px){
+	h1,.h1 {font-size: 4em;}
+}
+
+@media (max-width: 768px){
+	h1,.h1 {font-size: 2em;}
+	h2,.h2 {font-size: 1.7em;margin-top:25px;}
+	h3,.h3 {font-size: 1.2em;}
+	h4,.h4 {font-size: 0.8em;}
+	h5,.h5 {font-size: 0.6em;}
+}
+
+@media (max-width: 468px){
+	.hidden-xxs{
+		display: none;
+	}
+}
+
+
+.cursive{
+	font-family: 'Permanent Marker', cursive;
+}
+
+@media (max-width: 768px){
+	.container{
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+}
+
+.text-white{
+	color: #FFF;
+}
+
+.btn.btn-xl{
+	font-weight: 400;
+	padding: 15px 20px;
+	font-size: 24px;
+	line-height: 1.33;
+	border-radius: 8px;
+}
+@media (max-width: 768px){
+	.btn.btn-xl{
+		padding: 10px 15px;
+		font-size: 18px;
+		line-height: 1;
+		border-radius: 6px;
+	}
+}
+
+.spaced{
+	line-height: 1.5;
+}
+.bg-cover{
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center; 
+}
+.float-outter{
+	position: relative;
+}
+.float-inner{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.bg-pattern{
+	padding: 30px 0;
+}
+
+.bg-shadow{
+	-moz-box-shadow:    0px 4px 4px 1px #333;
+	-webkit-box-shadow: 0px 4px 4px 1px #333;
+	box-shadow:         0px 4px 4px 1px #333;
+}
+
+.inner-shadow{
+	-moz-box-shadow:    inset 0px 8px 8px #333;
+	-webkit-box-shadow: inset 0px 8px 8px #333;
+	box-shadow:         inset 0px 8px 8px #333;
+}
+
+.bg-watermark{
+	opacity: 0.5;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.bg-main{
+	color: #EEE;
+	height: 700px;
+	width: 100%;
+	background-position: 25% 0px;
+}
+@media (max-width: 768px){
+	.bg-main{
+		height: 700px;
+	}
+}
+.bg-main .container{
+	position: relative;
+	height: 100%;
+}
+
+.bg-main-tagline{
+	position: absolute;
+	display: inline-block; 
+	width: 65%;
+	top: 10%;
+	right: 10px;
+}
+.bg-main-cta{
+	position: absolute;
+	top: 400px;
+	right: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.bg-main-cta{top: 350px;}
+}
+@media (max-width: 768px){
+	.bg-main-cta{top: 300px;}
+}
+
+@media (max-width: 768px){
+	.bg-main-tagline{
+		top: 5%;
+	}
+}
+.crop{
+	overflow: hidden;
+	display: inline-block;
+}
+
+.img-howto{
+	height: 275px;
+	margin: 15px;
+}
+
+.img-quote{width:150px;}
+.img-quote-hand{width: 150px;margin-left:5px;}
+
+.howto-box{height: 305px;}
+
+@media (max-width: 768px){
+	.margin-top-xs{margin-top: 120px;}
+	.img-handshake{width: 200px;}
+	.howto-box{height: 275px;}
+	.img-howto{height: 225px;}
+}
+@media (max-width: 468px){
+	.img-handshake{width:170px}
+}
+
+
+/* carousel */
+.testimonials.jcarousel {
+    /*position: relative;
+    overflow: hidden;
+    width: 100%;*/
+}
+
+.testimonials.jcarousel ul {
+    /*width: 20000em;*/
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials.jcarousel li {
+    float: left;
+    width: 100%;
+    
+}
+
+p.quote{	
+	padding: 20px 50px 20px 20%;
+	display: inline-block;
+	width: 66%;
+	vertical-align: middle;
+	font-size: 16px;
+}
+p.quote-by{
+	padding: 20px;
+	display: inline-block;
+	width: 33%;
+	vertical-align: middle;	
+}
+
+.why-use-box{
+	width: 50%;
+	padding: 0 20px;
+}
+
+.svg-object{
+	margin-left: 20%;
+	width: 60%;
+	height: 100%;
+}
+
+#slide-1 {
+    max-height: 550px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px){
+	#slide-1 {max-height: 450px;}
+}
+
+.pressContainer {
+    height: 80px;
+    margin-top: 5px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.pressContainer .logo {
+    width: 16%;
+    height: 39px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+
+    opacity: 0.6;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+
+
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+
+}
+
+
+.pressContainer .logo:hover {
+  opacity: 1;
+  filter: none;
+  -webkit-filter: none;
+}
+
+.logo.techcrunch {
+    background-image: url("../presslogos/techcrunch_logo.8178d51669ba.png");
+
+}
+
+.logo.dowJones {
+    background-image: url("../presslogos/dowjones_logo.9cb681bdbb37.png");
+}
+
+.logo.pandodaily {
+    background-image: url("../presslogos/pandodaily_logo.3e23270f75c4.png");
+}
+
+.logo.ventureBeat {
+    background-image: url("../presslogos/venturebeat_logo.66cf03d7d11f.png");
+}
+
+.logo.wallstreetJournal {
+    background-image: url("../presslogos/wsj_logo.450a5cd474c0.png");
+}
+
+.logo.crains {
+    background-image: url("../presslogos/crains_logo.448e1d5539a0.png");
+}
+
+@media (max-width: 468px){
+    .pressContainer .logo {
+        width: 21%;
+    }
+
+    .pressContainer .logo.pandodaily {
+        display: none;
+    }
+}
+
+
+/*fixes for IE 8 and below*/
+.ie6 .pressContainer,
+.ie7 .pressContainer,
+.ie8 .pressContainer {
+    display : none; /* IE8 and below */
+}
+
+.ie6 #slide-1,
+.ie7 #slide-1,
+.ie8 #slide-1 {
+    background-repeat : repeat; /* IE8 and below */
+}
+
+.ie6 .bg-cover,
+.ie7 .bg-cover,
+.ie8 .bg-cover {
+    background-repeat : repeat; /* IE8 and below */
+}
+
+.ie6 .testimonials,
+.ie7 .testimonials,
+.ie8 .testimonials {
+    display : none; /* IE8 and below */
+}
+
+.ie6 .bg-main-cta,
+.ie7 .bg-main-cta,
+.ie8 .bg-main-cta {
+    top: 50%; /* IE8 and below */
+}
+/*fixes for IE 8 and below*/

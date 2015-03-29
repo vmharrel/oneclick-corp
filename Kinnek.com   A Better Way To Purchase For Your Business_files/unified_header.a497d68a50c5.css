@@ -1,0 +1,139 @@
+.row-marginless{
+    margin: 0;
+}
+.row-marginless > div{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.inline{
+	display: inline-block;
+}
+
+.unified_header{
+	width:100%;
+	height:auto;
+	display:block;
+	background-repeat: repeat;
+}
+
+.unified_header .kinnek_logo{
+	display:block;
+	padding-top:10px;
+	outline:none;
+	border:0px;
+	float:left;
+	text-align: right;
+}
+.unified_header .tagline{
+	margin: 3px 0;
+	font-weight: 400;
+	font-size: 14px;
+	padding-left: 50px;
+	color: #0d7cb4;
+	width: 250px;
+}
+@media screen and (max-width: 768px) {
+	.kinnek_logo { width: 150px;}
+	.unified_header .tagline{ display: none; }
+}
+
+
+.unified_header .header_links{
+	width:auto;
+	height:auto;
+	display:block;
+	float:right;
+	margin-top:25px;
+}
+@media screen and (max-width: 768px) {
+	.unified_header .header_links{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.unified_header .kinnek_logo_browse{
+	display:block;
+	padding-top:15px;
+	outline:none;
+	border:0px;
+}
+
+.unified_header .header_links_browse{
+		width: 235px;
+		display: block;
+		height: 25px;
+		float: right;
+}
+@media screen and (max-width: 768px) {
+	.hidden-xs-inline-block { display: none;}
+	.visible-xs-inline-block { display: inline-block !important; }
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) {
+	.unified_header .header_links_browse{
+		margin-top: -90px;
+	}
+}
+@media screen and (max-width: 991px) and (min-width: 769px) {
+	.unified_header .header_links_browse{
+		margin-top: -90px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.unified_header .header_links_browse{
+		margin-top: 15px;
+	}
+}
+
+.unified_header .industries{
+	margin-top: -2px;
+}
+
+.unified_header .header_links_browse a,
+.unified_header .header_links > div > a,
+.unified_header .header_links > a{
+	display:inline;
+	padding:5px 7px;
+	margin:0px;
+	font:13px Arial, Helvetica, sans-serif;
+	color:#0d7cb4;
+	text-decoration:none;
+	background-color: transparent;
+	border:1px solid transparent;
+	border-radius: 5px;
+}
+
+.unified_header .header_links_browse a:hover,
+.unified_header .header_links a:hover{
+	color:white;
+	background-color:#0d7cb4;
+}
+
+form.search{
+	margin-top: 15px;
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+} 
+
+form.search label{
+	font-weight: 300;
+	padding-right: 0px;
+}
+
+.autocomplete-title {
+	max-width: 600px;
+	overflow: hidden;
+}
+
+.preheader {
+	width: 100%;
+	display: block;
+	margin-bottom: 0;
+	padding: 5px;
+	background-color: #C6AF47;
+	color: #FFF;
+	border-radius: 0;
+}

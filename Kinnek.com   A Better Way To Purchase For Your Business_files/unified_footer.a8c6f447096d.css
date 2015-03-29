@@ -1,0 +1,48 @@
+/*------------------ Unified Footer ---------------*/
+.unified_footer{
+	width:100%;
+	min-height:70px;
+	background-image: url("img/background_bbb_matte.3e339d45d515.png");
+	padding:20px 0px 0px 0px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#EEE;
+    font-size: 12px;
+}
+
+
+.unified_footer .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.unified_footer .links  li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #C8C8C8;
+}
+
+.unified_footer .links .last {
+    border-right:  none;
+}
+
+.unified_footer a {
+    color: #EEE;
+}
+
+
+@media (max-width: 768px) {
+    .unified_footer .links {
+        float: none !important;
+        display: block;
+    }
+
+    .unified_footer .links  li {
+        padding: 0 5px;
+    }
+    .unified_footer .copyright {
+        display: block;
+        float: none !important;
+        padding-left: 50px;
+    }
+}
